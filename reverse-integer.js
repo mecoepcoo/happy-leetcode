@@ -12,6 +12,8 @@ var reverse = function(x) {
   return num >= -Math.pow(2, 31) && num <= Math.pow(2, 31) ? num : 0;
 };
 
+exports.reverse = reverse;
+
 let r1 = reverse(123);
 let r2 = reverse(-123);
 let r3 = reverse(120);

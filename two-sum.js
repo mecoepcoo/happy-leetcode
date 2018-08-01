@@ -17,5 +17,7 @@ var twoSum = function(nums, target) {
   return [];
 };
 
+exports.twoSum = twoSum;
+
 var r = twoSum([5, 6, 13, 15], 17);
 console.log(r);
