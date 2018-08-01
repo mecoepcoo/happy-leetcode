@@ -28,4 +28,6 @@ var romanToInt = function(s) {
   return sum;
 };
 
+exports.romanToInt = romanToInt;
+
 console.log(romanToInt('MCMXCIV')); // 1994

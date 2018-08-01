@@ -16,4 +16,6 @@ var isPalindrome = function(x) {
   return leftStr === rightStr.split('').reverse().join('') ? true : false;
 };
 
+exports.isPalindrome = isPalindrome;
+
 console.log(isPalindrome(-123));
