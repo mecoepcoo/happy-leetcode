@@ -1,4 +1,4 @@
-const {reverse} = require('../reverse-integer');
+const {reverse} = require('../a7-reverse-integer');
 const should = require('should');
 
 describe('是否正确翻转整数', () => {
