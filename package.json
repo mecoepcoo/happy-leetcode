@@ -7,7 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "start": "mocha --watch",
+    "test": "mocha",
+    "report": "mocha --reporter mochawesome"
   },
   "repository": {
     "type": "git",
