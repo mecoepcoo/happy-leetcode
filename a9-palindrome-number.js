@@ -17,5 +17,3 @@ var isPalindrome = function(x) {
 };
 
 exports.isPalindrome = isPalindrome;
-
-console.log(isPalindrome(-123));

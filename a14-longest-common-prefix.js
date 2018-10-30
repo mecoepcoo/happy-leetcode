@@ -12,7 +12,7 @@ var longestCommonPrefix = function (strs) {
   for (let word of strs) {
     trie.insert(word);
   }  
-  console.log(trie);
+  // console.log(trie);
   let word = strs[0];
   let n = strs.length;
   // 公共前缀会被经过n次，筛选出第一次小于n的结点即可

@@ -13,8 +13,3 @@ var reverse = function(x) {
 };
 
 exports.reverse = reverse;
-
-let r1 = reverse(123);
-let r2 = reverse(-123);
-let r3 = reverse(120);
-console.log(r1, r2, r3);
