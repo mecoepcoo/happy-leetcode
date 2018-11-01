@@ -1,4 +1,4 @@
-const {longestCommonPrefix} = require('../a14-longest-common-prefix');
+const {longestCommonPrefix} = require('../../a1-50/a14-longest-common-prefix');
 const should = require('should');
 
 describe('寻找最长公共前缀', () => {

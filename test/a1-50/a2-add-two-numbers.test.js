@@ -1,4 +1,4 @@
-const {addTwoNumbers, ListNode} = require('../a2-add-two-numbers');
+const {addTwoNumbers, ListNode} = require('../../a1-50/a2-add-two-numbers');
 const should = require('should');
 
 describe('两数相加测试', () => {

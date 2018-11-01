@@ -7,9 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "start": "mocha --watch",
-    "test": "mocha",
-    "report": "mocha --reporter mochawesome"
+    "start": "mocha --recursive --watch",
+    "test": "mocha --recursive",
+    "report": "mocha --recursive --reporter mochawesome"
   },
   "repository": {
     "type": "git",

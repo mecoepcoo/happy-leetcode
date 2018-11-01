@@ -1,4 +1,4 @@
-const {lengthOfLongestSubstring} = require('../a3-longest-substring-without-repeating-characters');
+const {lengthOfLongestSubstring} = require('../../a1-50/a3-longest-substring-without-repeating-characters');
 const should = require('should');
 
 describe('无重复字符的最长子串测试', () => {

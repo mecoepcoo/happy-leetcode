@@ -1,4 +1,4 @@
-const {romanToInt} = require('../a13-roman-to-integer');
+const {romanToInt} = require('../../a1-50/a13-roman-to-integer');
 const should = require('should');
 
 describe('罗马数字转换为整数', () => {

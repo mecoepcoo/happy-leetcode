@@ -1,4 +1,4 @@
-const {twoSum} = require('../a1-two-sum');
+const {twoSum} = require('../../a1-50/a1-two-sum');
 const should = require('should');
 
 describe('两数之和测试', () => {

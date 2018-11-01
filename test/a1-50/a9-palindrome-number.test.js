@@ -1,4 +1,4 @@
-const {isPalindrome} = require('../a9-palindrome-number');
+const {isPalindrome} = require('../../a1-50/a9-palindrome-number');
 const should = require('should');
 
 describe('是否是回文数', () => {
