@@ -1,4 +1,4 @@
-const {isValid} = require('../../a1-50/a20-valid-parentheses');
+const {isValid} = require('../../a1-50/a26-remove-duplicates-from-sorted-array');
 const should = require('should');
 
 describe('括号配对测试', () => {
