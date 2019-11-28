@@ -45,35 +45,28 @@
  * @return {number}
  */
 var strStr = function(haystack, needle) {
-  if (needle === '') {
-    return 0
-  }
-  let i = 0
+  if (needle === '') return 0
   let nLength = needle.length
-  while (i <= haystack.length - nLength) {
+  let hLength = haystack.length
+  if (hLength < nLength) return -1;
+  let i = 0
+  while (i <= hLength - nLength) {
     let piece = haystack.slice(i, i + nLength)
     if (piece === needle) {
       return i
     }
-    if (nLength === 1) {
-      i++
-      continue
-    }
-    if () {
-      
-    }
-    for (let j = 1; j < needle.length; j++) {
+    let nextCanMatch = false
+    for (let j = needle.length - 1; j >= 0; j--) {
       if (needle[j] === haystack[i + nLength]) {
-        i += j
+        i += nLength - j
+        nextCanMatch = true
         break
-      } else {
-        i += nLength
       }
+    }
+    if (!nextCanMatch) {
+      i += nLength + 1
     }
   }
   return -1
 }
-let r = strStr('mississippi', 'issi')
-console.log(r)
 // @lc code=end
-
