@@ -56,7 +56,7 @@ var strStr = function(haystack, needle) {
       return i
     }
     let nextCanMatch = false
-    for (let j = needle.length - 1; j >= 0; j--) {
+    for (let j = nLength - 1; j >= 0; j--) {
       if (needle[j] === haystack[i + nLength]) {
         i += nLength - j
         nextCanMatch = true
