@@ -34,7 +34,17 @@
  * @return {number}
  */
 var maxSubArray = function(nums) {
-    
-};
+  let sum = 0
+  let cn = nums[0]
+  for (let num of nums) {
+    if (sum > 0) {
+      sum += num
+    } else {
+      sum = num
+    }
+    cn = Math.max(sum, cn)
+  }
+  return cn
+}
 // @lc code=end
 
