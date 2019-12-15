@@ -41,7 +41,18 @@
  * @return {number}
  */
 var mySqrt = function(x) {
-    
+  if (!x) return 0
+  let a = 1, b = x + 1
+  while (a + 1 < b) {
+    let tr = Math.floor((a + b) / 2)
+    if (tr * tr <= x) {
+      a = tr
+    } else if (tr * tr > x) {
+      b = tr
+    }
+  }
+  return a
 }
+
 // @lc code=end
 
