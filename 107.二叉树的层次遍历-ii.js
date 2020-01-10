@@ -49,7 +49,23 @@
  * @return {number[][]}
  */
 var levelOrderBottom = function(root) {
-    
-};
+  if (!root) return []
+  let list = []
+  let p = root
+  list.push({ index: 0, ele: p })
+  let result = []
+  let index = 0
+  while (list.length) {
+    let cur = list.shift()
+    p = cur.ele
+    index = cur.index
+    if (!result[index]) result[index] = []
+    result[index].push(p.val)
+    if (p.left) list.push({ index: index + 1, ele: p.left })
+    if (p.right) list.push({ index: index + 1, ele: p.right })
+  }
+  result = result.reverse()
+  return result
+}
 // @lc code=end
 
